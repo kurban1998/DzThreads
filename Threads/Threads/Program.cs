@@ -6,93 +6,42 @@ namespace Threads
     {
         static void Main(string[] args)
         {
-            #region Для 100тыс.
-            Console.WriteLine("100 тыс.");
-            int[] array1 = new int[100000];
-            var rnd = new Random();
-            for (int i = 0; i < array1.Length; i++)
+            int[] sizes = { 100000, 1000000, 10000000 };
+
+            foreach (var size in sizes)
             {
-                array1[i] = rnd.Next(1, 101);
+                Console.WriteLine($"Для {size} элементов");
+                int[] array = new int[size];
+                var rnd = new Random();
+                for (int i = 0; i < array.Length; i++)
+                {
+                    array[i] = rnd.Next(1, 101);
+                }
+
+                Stopwatch swSynch = new Stopwatch();
+                swSynch.Start();
+                var sumSynch = SumSynch(array);
+                swSynch.Stop();
+
+                Console.WriteLine("Синхронный: " + swSynch.ElapsedMilliseconds + "мс. " + "Сумма: " + sumSynch);
+
+
+                Stopwatch swThread = new Stopwatch();
+                swThread.Start();
+                var sumThread = SumThread(array);
+                swThread.Stop();
+
+                Console.WriteLine("Потоки: " + swThread.ElapsedMilliseconds + "мс. " + "Сумма: " + sumThread);
+
+                Stopwatch swLinq = new Stopwatch();
+                swLinq.Start();
+                var sumLinq = SumLinq(array);
+                swLinq.Stop();
+
+                Console.WriteLine("Параллельно: " + swLinq.ElapsedMilliseconds + "мс. " + "Сумма: " + sumLinq);
+
+                Console.WriteLine();
             }
-
-            Stopwatch sw1 = new Stopwatch();
-            sw1.Start();
-            var sumSunch1 = SumSynch(array1);
-            sw1.Stop();
-            Console.WriteLine("Синхронный: " + sw1.ElapsedMilliseconds + "мс. " + "Сумма: " + sumSunch1);
-
-            Stopwatch sw2 = new Stopwatch();
-            sw2.Start();
-            var sumThread1 = SumThread(array1);
-            sw2.Stop();
-            Console.WriteLine("Потоки: " + sw2.ElapsedMilliseconds + "мс. " + "Сумма: " + sumThread1);
-
-            Stopwatch sw3 = new Stopwatch();
-            sw3.Start();
-            var sumLinq1 = SumLinq(array1);
-            sw3.Stop();
-            Console.WriteLine("Парал: " + sw2.ElapsedMilliseconds + "мс. " + "Сумма: " + sumLinq1);
-            #endregion
-
-            Console.WriteLine();
-            Console.WriteLine("1 млн.");
-
-            #region Для 1 млн.
-            int[] array2 = new int[1000000];
-            var rnd1 = new Random();
-            for (int i = 0; i < array2.Length; i++)
-            {
-                array2[i] = rnd1.Next(1, 101);
-            }
-
-            Stopwatch sw4 = new Stopwatch();
-            sw4.Start();
-            var sumSynch = SumSynch(array2);
-            sw4.Stop();
-            Console.WriteLine("Синхронный: " + sw4.ElapsedMilliseconds + "мс. " + "Сумма: " + sumSynch);
-
-            Stopwatch sw5 = new Stopwatch();
-            sw5.Start();
-            var sumThread2 = SumThread(array2);
-            sw5.Stop();
-            Console.WriteLine("Потоки: " + sw5.ElapsedMilliseconds + "мс. " + "Сумма: " + sumThread2);
-
-            Stopwatch sw6 = new Stopwatch();
-            sw6.Start();
-            var sumLinq2 = SumLinq(array2);
-            sw6.Stop();
-            Console.WriteLine("Парал: " + sw6.ElapsedMilliseconds + "мс. " + "Сумма: " + sumLinq2);
-            #endregion
-
-            Console.WriteLine();
-            Console.WriteLine("10 млн.");
-
-            #region Для 10 млн.
-            int[] array3 = new int[10000000];
-            var rnd2 = new Random();
-            for (int i = 0; i < array3.Length; i++)
-            {
-                array3[i] = rnd2.Next(1, 101);
-            }
-
-            Stopwatch sw7 = new Stopwatch();
-            sw7.Start();
-            var sumSynch3 = SumSynch(array3);
-            sw7.Stop();
-            Console.WriteLine("Синхронный: " + sw7.ElapsedMilliseconds + "мс. " + "Сумма: " + sumSynch3);
-
-            Stopwatch sw8 = new Stopwatch();
-            sw8.Start();
-            var sumThread3 = SumThread(array3);
-            sw8.Stop();
-            Console.WriteLine("Потоки: " + sw8.ElapsedMilliseconds + "мс. " + "Сумма: " + sumThread3);
-
-            Stopwatch sw9 = new Stopwatch();
-            sw9.Start();
-            var sumLinq3 = SumLinq(array3);
-            sw9.Stop();
-            Console.WriteLine("Парал: " + sw9.ElapsedMilliseconds + "мс. " + "Сумма: " + sumLinq3);
-            #endregion
         }
 
         private static int SumSynch(int[] numbers)
@@ -143,7 +92,7 @@ namespace Threads
 
         private static int SumLinq(int[] numbers)
         {
-            return ParallelEnumerable.Range(0, numbers.Length).Sum(i => numbers[i]);
+            return numbers.AsParallel().Sum();
         }
     }
 }

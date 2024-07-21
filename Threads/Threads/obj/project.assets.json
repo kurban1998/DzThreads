@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\Threads\\Threads\\Threads.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\Новая папка\\DzThreads\\Threads\\Threads\\Threads.csproj",
       "projectName": "Threads",
-      "projectPath": "C:\\Users\\User\\Desktop\\Threads\\Threads\\Threads.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\Новая папка\\DzThreads\\Threads\\Threads\\Threads.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\Threads\\Threads\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\Новая папка\\DzThreads\\Threads\\Threads\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

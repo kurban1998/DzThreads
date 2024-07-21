@@ -12,3 +12,18 @@ C:\Users\User\Desktop\Threads\Threads\obj\Debug\net6.0\refint\Threads.dll
 C:\Users\User\Desktop\Threads\Threads\obj\Debug\net6.0\Threads.pdb
 C:\Users\User\Desktop\Threads\Threads\obj\Debug\net6.0\Threads.genruntimeconfig.cache
 C:\Users\User\Desktop\Threads\Threads\obj\Debug\net6.0\ref\Threads.dll
+C:\Users\User\Desktop\Новая папка\DzThreads\Threads\Threads\bin\Debug\net6.0\Threads.exe
+C:\Users\User\Desktop\Новая папка\DzThreads\Threads\Threads\bin\Debug\net6.0\Threads.deps.json
+C:\Users\User\Desktop\Новая папка\DzThreads\Threads\Threads\bin\Debug\net6.0\Threads.runtimeconfig.json
+C:\Users\User\Desktop\Новая папка\DzThreads\Threads\Threads\bin\Debug\net6.0\Threads.dll
+C:\Users\User\Desktop\Новая папка\DzThreads\Threads\Threads\bin\Debug\net6.0\Threads.pdb
+C:\Users\User\Desktop\Новая папка\DzThreads\Threads\Threads\obj\Debug\net6.0\Threads.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Новая папка\DzThreads\Threads\Threads\obj\Debug\net6.0\Threads.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Новая папка\DzThreads\Threads\Threads\obj\Debug\net6.0\Threads.AssemblyInfo.cs
+C:\Users\User\Desktop\Новая папка\DzThreads\Threads\Threads\obj\Debug\net6.0\Threads.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Новая папка\DzThreads\Threads\Threads\obj\Debug\net6.0\Threads.sourcelink.json
+C:\Users\User\Desktop\Новая папка\DzThreads\Threads\Threads\obj\Debug\net6.0\Threads.dll
+C:\Users\User\Desktop\Новая папка\DzThreads\Threads\Threads\obj\Debug\net6.0\refint\Threads.dll
+C:\Users\User\Desktop\Новая папка\DzThreads\Threads\Threads\obj\Debug\net6.0\Threads.pdb
+C:\Users\User\Desktop\Новая папка\DzThreads\Threads\Threads\obj\Debug\net6.0\Threads.genruntimeconfig.cache
+C:\Users\User\Desktop\Новая папка\DzThreads\Threads\Threads\obj\Debug\net6.0\ref\Threads.dll

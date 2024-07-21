@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Threads\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DzThreads\\Threads\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{53AA0A04-B13B-4B63-8615-4F6EB9E54E52}|Threads\\Threads.csproj|c:\\users\\user\\desktop\\threads\\threads\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{53AA0A04-B13B-4B63-8615-4F6EB9E54E52}|Threads\\Threads.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\dzthreads\\threads\\threads\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{53AA0A04-B13B-4B63-8615-4F6EB9E54E52}|Threads\\Threads.csproj|solutionrelative:threads\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Threads\\Threads\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DzThreads\\Threads\\Threads\\Program.cs",
               "RelativeDocumentMoniker": "Threads\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Threads\\Threads\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DzThreads\\Threads\\Threads\\Program.cs",
               "RelativeToolTip": "Threads\\Program.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAcwBUAAABPAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACsAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-10T15:07:14.668Z",
               "EditorCaption": ""
